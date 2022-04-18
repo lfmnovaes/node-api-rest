@@ -1,5 +1,5 @@
-const express = require('express');
+import express from 'express';
+import globalController from '../controllers/global';
 const router = express.Router();
-const globalController = require('./controllers/global');
 router.get('/', globalController.healthyCheck);
-module.exports = router;
+export default router;

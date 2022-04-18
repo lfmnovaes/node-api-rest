@@ -1,5 +1,4 @@
-import express from 'express';
-import globalController from './controllers/global';
-const router = express.Router();
-router.get('/', globalController.healthyCheck);
-export default router;
+import globalRoute from './routes/global';
+import productRoute from './routes/product';
+const routes = [globalRoute, productRoute];
+export default routes;
